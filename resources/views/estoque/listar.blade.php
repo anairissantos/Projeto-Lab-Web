@@ -10,7 +10,11 @@
 
                         <div class="form-group">
                             @foreach($armamentos as $armamento)
-                                <label class="col-md-4 control-label form-inline">{{$armamento->modelo}}: {{$armamento->disponivel}}</label>
+                                <label class="col-md-4 control-label form-inline">{{$armamento->modelo}}:
+                                  @if({{$armamento->disponivel}})
+                                    Sim</label>
+                                  @else
+                                    Não</label>
                             @endforeach
                         </div>
                     </div>
