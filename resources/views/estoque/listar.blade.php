@@ -10,7 +10,7 @@
 
                         <div class="form-group">
                             @foreach($armamentos as $armamento)
-                                <label class="col-md-4 control-label form-inline">{{$acessorio->item->descricao}}: {{$acessorio->quantidade}}</label>
+                                <label class="col-md-4 control-label form-inline">{{$armamento->item->descricao}}: {{$armamento->quantidade}}</label>
                             @endforeach
                         </div>
                     </div>
