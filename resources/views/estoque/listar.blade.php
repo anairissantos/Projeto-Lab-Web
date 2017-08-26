@@ -13,9 +13,9 @@
                                 <label class="col-md-4 control-label form-inline">
                                   {{$armamento->modelo}}:
                                   @if($armamento->disponivel)
-                                    Sim
+                                    Disponível
                                   @else
-                                    Não
+                                    Em falta
                                   @endif
                                 </label>
                             @endforeach
