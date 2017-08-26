@@ -15,8 +15,9 @@
                                   @if($armamento->disponivel)
                                     Sim
                                   @else
-                                    Não</label>
+                                    Não
                                   @endif
+                                </label>
                             @endforeach
                         </div>
                     </div>
