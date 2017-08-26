@@ -95,36 +95,28 @@
   <div class="col-md-8">
 
     @if(isset($erro))
-        <div class="container">
             <div class="container">
                 <div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                     {{$erro}}</div>
             </div>
-        </div>
     @endif
     @if(session('erro'))
-        <div class="container">
             <div class="container">
                 <div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                     {{session('erro')}}</div>
             </div>
-        </div>
     @endif
     @if(isset($mensagem))
-    <div class="container">
         <div class="container">
             <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                 {{$mensagem}}</div>
         </div>
-    </div>
     @endif
     @if(session('mensagem'))
-        <div class="container">
             <div class="container">
                 <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                     {{session('mensagem')}}</div>
             </div>
-        </div>
     @endif
     @yield('content')
   </div>
