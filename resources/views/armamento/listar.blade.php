@@ -11,7 +11,6 @@
                 <th>Nº Serie</th>
                 <th>Fabricante</th>
                 <th>Disponível</th>
-                <th>Ações</th>
             </tr>
             </thead>
             <tbody>
@@ -21,9 +20,6 @@
                     <td>{{$armamento->numero_serie}}</td>
                     <td>{{$armamento->fabricante}}</td>
                     <td>@if($armamento->disponivel) Sim @else Não @endif</td>
-                    <td>
-
-                    </td>
                 </tr>
             @endforeach
             </tbody>

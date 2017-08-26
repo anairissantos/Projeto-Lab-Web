@@ -10,7 +10,6 @@
               <th>Calibre</th>
               <th>Descrição</th>
               <th>Quantidade</th>
-              <th>Ações</th>
           </tr>
           </thead>
           <tbody>
@@ -19,9 +18,6 @@
                   <td>{{$municao->calibre}}</td>
                   <td>{{$municao->descricao}}</td>
                   <td>{{$municao->quantidade}}</td>
-                  <td>
-
-                  </td>
               </tr>
           @endforeach
           </tbody>

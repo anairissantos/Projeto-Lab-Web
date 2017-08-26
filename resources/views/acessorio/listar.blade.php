@@ -9,7 +9,6 @@
               <tr>
                   <th>Descrição</th>
                   <th>Quantidade</th>
-                  <th>Ações</th>
               </tr>
             </thead>
             <tbody>
@@ -17,9 +16,6 @@
                 <tr>
                     <td>{{$acessorio->descricao}}</td>
                     <td>{{$acessorio->quantidade}}</td>
-                    <td>
-
-                    </td>
                 </tr>
             @endforeach
             </tbody>
