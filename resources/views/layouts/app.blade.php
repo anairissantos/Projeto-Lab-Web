@@ -91,27 +91,30 @@
     </nav>
   </div>
 @endif
+<div class="row">
+  <div class="col-md-8 inherit-width">
+        @if(isset($erro))
+          <div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              {{$erro}}</div>
+        @endif
+        @if(session('erro'))
+          <div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              {{session('erro')}}</div>
+        @endif
+        @if(isset($mensagem))
+          <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              {{$mensagem}}</div>
+        @endif
+        @if(session('mensagem'))
+          <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              {{session('mensagem')}}</div>
+        @endif
+  </div>
 
   <div class="col-md-8">
-
-    @if(isset($erro))
-      <div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-          {{$erro}}</div>
-    @endif
-    @if(session('erro'))
-      <div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-          {{session('erro')}}</div>
-    @endif
-    @if(isset($mensagem))
-      <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-          {{$mensagem}}</div>
-    @endif
-    @if(session('mensagem'))
-      <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-          {{session('mensagem')}}</div>
-    @endif
     @yield('content')
   </div>
+</div>
 
     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
         {{ csrf_field() }}
