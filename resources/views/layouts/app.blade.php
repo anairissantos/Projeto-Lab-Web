@@ -91,17 +91,17 @@
     </nav>
   </div>
 @endif
-@if(isset($erro))
-    <div class="container">
-        <div class="row col-md-8 col-md-offset-2 container">
-            <div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                {{$erro}}</div>
-        </div>
-    </div>
-@endif
-  <div class="col-md-8">
-    @yield('content')
 
+  <div class="col-md-8">
+
+    @if(isset($erro))
+        <div class="container">
+            <div class="row col-md-8 col-md-offset-2 container">
+                <div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    {{$erro}}</div>
+            </div>
+        </div>
+    @endif
     @if(session('erro'))
         <div class="container">
             <div class="row col-md-8 col-md-offset-2 container">
@@ -110,14 +110,14 @@
             </div>
         </div>
     @endif
-@if(isset($mensagem))
+    @if(isset($mensagem))
     <div class="container">
         <div class="row col-md-8 col-md-offset-2 container">
             <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                 {{$mensagem}}</div>
         </div>
     </div>
-@endif
+    @endif
     @if(session('mensagem'))
         <div class="container">
             <div class="row col-md-8 col-md-offset-2 container">
@@ -126,6 +126,7 @@
             </div>
         </div>
     @endif
+    @yield('content')
   </div>
 
     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
