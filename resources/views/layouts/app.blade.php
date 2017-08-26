@@ -36,7 +36,8 @@
 </head>
 <body>
   @if (!Auth::guest())
-<div class="col-md-1">
+<div class="row">
+  <div class="col-md-2 pull-left">
     <nav class="navbar navbar-default sidebar" role="navigation">
         <div class="container-fluid">
         <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
@@ -90,6 +91,7 @@
       </div>
     </nav>
   </div>
+</div>
 @endif
 
   <div class="col-md-8">
