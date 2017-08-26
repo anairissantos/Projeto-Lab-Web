@@ -1,48 +1,39 @@
 // Mixins
-// --------------------------
+// --------------------------------------------------
 
-.icon(@icon) {
-  .icon-FontAwesome();
-  content: @icon;
-}
+// Utilities
+@import "mixins/hide-text.less";
+@import "mixins/opacity.less";
+@import "mixins/image.less";
+@import "mixins/labels.less";
+@import "mixins/reset-filter.less";
+@import "mixins/resize.less";
+@import "mixins/responsive-visibility.less";
+@import "mixins/size.less";
+@import "mixins/tab-focus.less";
+@import "mixins/text-emphasis.less";
+@import "mixins/text-overflow.less";
+@import "mixins/vendor-prefixes.less";
 
-.icon-FontAwesome() {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  *margin-right: .3em; // fixes ie7 issues
-}
+// Components
+@import "mixins/alerts.less";
+@import "mixins/buttons.less";
+@import "mixins/panels.less";
+@import "mixins/pagination.less";
+@import "mixins/list-group.less";
+@import "mixins/nav-divider.less";
+@import "mixins/forms.less";
+@import "mixins/progress-bar.less";
+@import "mixins/table-row.less";
 
-.border-radius(@radius) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  border-radius: @radius;
-}
+// Skins
+@import "mixins/background-variant.less";
+@import "mixins/border-radius.less";
+@import "mixins/gradients.less";
 
-.icon-stack(@width: 2em, @height: 2em, @top-font-size: 1em, @base-font-size: 2em) {
-  .icon-stack {
-    position: relative;
-    display: inline-block;
-    width: @width;
-    height: @height;
-    line-height: @width;
-    vertical-align: -35%;
-    [class^="icon-"],
-    [class*=" icon-"] {
-      display: block;
-      text-align: center;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      font-size: @top-font-size;
-      line-height: inherit;
-      *line-height: @height;
-    }
-    .icon-stack-base {
-      font-size: @base-font-size;
-      *line-height: @height / @base-font-size;
-    }
-  }
-}
+// Layout
+@import "mixins/clearfix.less";
+@import "mixins/center-block.less";
+@import "mixins/nav-vertical-align.less";
+@import "mixins/grid-framework.less";
+@import "mixins/grid.less";
