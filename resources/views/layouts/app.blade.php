@@ -120,7 +120,7 @@
     @endif
     @if(session('mensagem'))
         <div class="container">
-            <div class="col-md-8 col-md-offset-2 container">
+            <div class="container">
                 <div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                     {{session('mensagem')}}</div>
             </div>
