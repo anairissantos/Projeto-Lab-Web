@@ -99,6 +99,9 @@
         </div>
     </div>
 @endif
+  <div class="col-md-8">
+    @yield('content')
+
     @if(session('erro'))
         <div class="container">
             <div class="row col-md-8 col-md-offset-2 container">
@@ -123,7 +126,7 @@
             </div>
         </div>
     @endif
-    @yield('content')
+  </div>
 
     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
         {{ csrf_field() }}
