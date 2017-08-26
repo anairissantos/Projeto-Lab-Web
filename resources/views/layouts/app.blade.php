@@ -36,7 +36,7 @@
 </head>
 <body>
   @if (!Auth::guest())
-
+<div class="col-md-8">
     <nav class="navbar navbar-default sidebar" role="navigation">
         <div class="container-fluid">
         <!--<div class="navbar-header">
@@ -97,6 +97,7 @@
         </div>
       </div>
     </nav>
+  </div>
 @endif
 @if(isset($erro))
     <div class="container">
