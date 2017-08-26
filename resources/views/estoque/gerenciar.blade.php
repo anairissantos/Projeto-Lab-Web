@@ -5,7 +5,7 @@
             <form class="form-horizontal" role="form" method="POST" action="{{ url('/sistema/estoque/gerenciar') }}">
                 {{ csrf_field() }}
 
-            <div class="col-md-8">
+            <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-heading">Entrada de Acessorios</div>
                     <div class="panel-body">
@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <div class="col-md-8 col-md-offset-2">
+            <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-heading">Entrada de Munições</div>
                     <div class="panel-body">
@@ -41,7 +41,7 @@
             </div>
 
                 <div class="form-group">
-                    <div class="col-md-6 col-md-offset-4">
+                    <div class="row">
                         <button type="submit" class="btn btn-primary">
                             Salvar!
                         </button>
