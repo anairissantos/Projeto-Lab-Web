@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/css/app.css"/>
 
     <!-- Scripts -->
