@@ -86,7 +86,6 @@ body,html{
 
     .navbar{
       position: fixed;
-      display: block;
     }
 
     nav.sidebar:hover + .main{
