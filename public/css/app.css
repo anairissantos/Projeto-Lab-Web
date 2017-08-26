@@ -78,7 +78,7 @@ body,html{
  @media (min-width: 765px) {
 
     .main{
-      position: absolute;
+      /*position: absolute;*/
       width: calc(100% - 40px);
       margin-left: 40px;
       float: right;
