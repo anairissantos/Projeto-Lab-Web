@@ -2,7 +2,7 @@
 
 @section('content')
         <div class="row">
-            <div class="col-md-8">
+            <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-heading">Armamentos</div>
                     <div class="panel-body">
@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <div class="col-md-8">
+            <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-heading">Acessorios</div>
                     <div class="panel-body">
@@ -37,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="col-md-8">
+            <div class="row">
                 <div class="panel panel-default">
                     <div class="panel-heading">Munições</div>
                     <div class="panel-body">
