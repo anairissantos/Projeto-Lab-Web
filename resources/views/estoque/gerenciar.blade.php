@@ -1,12 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
         <div class="row">
             <form class="form-horizontal" role="form" method="POST" action="{{ url('/sistema/estoque/gerenciar') }}">
                 {{ csrf_field() }}
 
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">Entrada de Acessorios</div>
                     <div class="panel-body">
@@ -50,6 +49,5 @@
                 </div>
             </form>
         </div>
-    </div>
 
 @endsection

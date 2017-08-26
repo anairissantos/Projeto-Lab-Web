@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-      <h2 class="col-md-8">Militares Cadastrados</h2>
-      <div class="col-md-8">
+      <div class="row">
+        <h2>Militares Cadastrados</h2>
         <table class="table table-striped table-bordered table-responsive">
             <thead>
             <tr>
