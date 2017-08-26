@@ -36,7 +36,7 @@
 </head>
 <body>
   @if (!Auth::guest())
-<div class="col-md-8">
+<div class="col-md-4">
     <nav class="navbar navbar-default sidebar" role="navigation">
         <div class="container-fluid">
         <!--<div class="navbar-header">
