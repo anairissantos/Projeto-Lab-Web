@@ -18,6 +18,9 @@ class Estoque extends Model
             case 'acessorio':
                 $item = Acessorio::find($this->item_id);
                 break;
+            case 'armamento':
+                $item = Armamento::find($this->item_id);
+                break;
             default :
                 $item = null;
                 break;
@@ -32,6 +35,10 @@ class Estoque extends Model
 
     public function getAcessorios(){
         return Estoque::whereReservaId(\Auth::user()->reserva_id)->whereTipo('acessorio')->get();
+    }
+
+    public function getArmamentos(){
+        return Estoque::whereReservaId(\Auth::user()->reserva_id)->whereTipo('armamento')->get();
     }
 
 }

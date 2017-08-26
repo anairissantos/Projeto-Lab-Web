@@ -9,8 +9,15 @@
                     <div class="panel-body">
 
                         <div class="form-group">
-                            @foreach($acessorios as $acessorio)
-                                <label class="col-md-4 control-label form-inline">{{$acessorio->item->descricao}}: {{$acessorio->quantidade}}</label>
+                            @foreach($armamentos as $armamento)
+                                <label class="col-md-4 control-label form-inline">
+                                  {{$armamento->modelo}}:
+                                  @if($armamento->disponivel)
+                                    Sim
+                                  @else
+                                    Não
+                                  @endif
+                                </label>
                             @endforeach
                         </div>
                     </div>
