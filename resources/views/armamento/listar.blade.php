@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-      <h2 class="col-md-8">Armamentos Cadastrados</h2>
-      <div class="col-md-8">
+      <div class="row">
+        <h2>Armamentos Cadastrados</h2>
         <table class="table table-striped table-bordered table-responsive">
             <thead>
             <tr>
@@ -25,5 +24,4 @@
             </tbody>
         </table>
       </div>
-    </div>
 @endsection

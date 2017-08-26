@@ -28,6 +28,11 @@ body {
 	margin-top: 60px;
 }
 
+.inherit-width{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 form[role=form] {
 	color: #5d5d5d;
 	background: #FFF;
@@ -78,10 +83,14 @@ body,html{
  @media (min-width: 765px) {
 
     .main{
-      position: absolute;
+      /*position: absolute;*/
       width: calc(100% - 40px);
       margin-left: 40px;
       float: right;
+    }
+
+    .navbar{
+      position: fixed;
     }
 
     nav.sidebar:hover + .main{
