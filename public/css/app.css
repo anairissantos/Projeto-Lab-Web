@@ -79,10 +79,13 @@ body,html{
 
     .main{
       /*position: absolute;*/
-      position: fixed;
       width: calc(100% - 40px);
       margin-left: 40px;
       float: right;
+    }
+
+    .navbar{
+      position: fixed;
     }
 
     nav.sidebar:hover + .main{
