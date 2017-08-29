@@ -1,12 +1,12 @@
 {
-  "name": "lab-web-final",
+  "name": "Projeto-Lab-Web",
   "description": "",
   "main": "",
   "authors": [
-    "Litiano Moura <litiano.moura@yahoo.com.br>"
+    "ana iris <anairiscsantos@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/Litiano/Lab-Web-Final",
+  "homepage": "https://github.com/anairissantos/Projeto-Lab-Web",
   "ignore": [
     "**/.*",
     "node_modules",
